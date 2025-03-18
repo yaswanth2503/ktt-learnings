@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="https://www.tutorialspoint.com/" />
     <title>KTT LEARNINGS</title>
     <link rel="icon" type="image" href="workplace.ico" />
     <style>
@@ -97,7 +98,7 @@
     </style>
   </head>
   <body>
-    <center>
+    <!-- <center>
     <h1>DAY1</h1>
     
     <h1>Student Report Card</h1>
@@ -163,7 +164,7 @@
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
-      <li><a href="#">Skills</a></li>
+      <li><a href="#">Skills</a></li>  
     </ul>
   </nav>
 </section>
@@ -220,8 +221,9 @@
     <h2>Find My Location</h2>
     <button onclick="getLocation()">Get Location</button>
     <p id="location"></p>
-    <!-- Ensure this exists -->
-    <br />
+     Ensure this exists -->
+    <!--<br />
+
     <h2>Drag and Drop</h2>
 
     <p>Drag the W3Schools image into the rectangle:</p>
@@ -249,10 +251,314 @@
       <div class="inside-container"></div>
     </div>
   </div>
+<br> -->
+
+    <center><h1>Day 3</h1></center>
+
+    <!-- Heading tags -->
+    <h1>This is a Heading</h1>
+    <h2>This is a Heading</h2>
+    <h3>This is a Heading</h3>
+    <h4>This is a Heading</h4>
+    <h5>This is a Heading</h5>
+    <h6>This is a Heading</h6>
+    <br />
+    <hr />
+    <br />
+
+    <!-- Paragraph tag-->
+    <p>
+      HTML (HyperText Markup Language) is a standard markup language to design
+      the structure of a webpage. HTML is the combination of HyperText and
+      Markup Language. HyperText defines the internal links between webpages,
+      and Markup language defines the layout and presentation of text and media.
+    </p>
+    <br />
+    <hr />
+    <br />
+
+    <!-- Division tag -->
+    <div>
+      HTML elements are created using the HTML tags. An HTML element is defined
+      by a pair of starting and closing tags having content between them, which
+      defines the content and structure of the webpage. Whereas, HTML tags are
+      like keywords and part of HTML elements enclosed in angel brackets (<>).
+    </div>
+    <br />
+    <hr />
+    <br />
+
+    <!-- Void elements -->
+    <img src="nar.jpg" />
+    <p>hr tag is used to create a horizontal line</p>
+    <p>br tag is used to create a line break</p>
+    <br />
+    <hr />
+    <br />
+
+    <!-- Dropdown menu -->
+    <select name="fruits" id="fruits">
+      <optgroup label="Citrus Fruits">
+        <option value="orange">Orange</option>
+        <option value="lemon">Lemon</option>
+      </optgroup>
+      <optgroup label="Tropical Fruits" disabled>
+        <option value="mango">Mango</option>
+        <option value="pineapple">Pineapple</option>
+      </optgroup>
+    </select>
+    <br />
+    <hr />
+    <br />
+
+    <!-- Iframe -->
+    <p>iframe tag is used to embed another webpage in the current webpage</p>
+    <iframe
+      title="Wikipedia page for the HTML language"
+      src="https://en.m.wikipedia.org/wiki/HTML"
+    >
+    </iframe>
+    <br />
+    <hr />
+    <br />
+
+    <!-- Title attribute -->
+    <h3 title="Hello HTML!">Titled Heading Tag Example</h3>
+    <br />
+    <hr />
+    <br />
+
+    <!-- Style attribute -->
+    <p style="font-family: arial; color: #ff0000">This is my first web page</p>
+    <br />
+    <hr />
+    <br />
+
+    <!-- HTML Formatting Tags -->
+    <h2>HTML Formatting Tags</h2>
+    <p>
+      Tim Berners-Lee, a British scientist, invented the
+      <abbr title="World Wide Web">WWW</abbr> in 1989
+    </p>
+
+    <address>
+      Vetri Tower third floor <br />
+      Avinashi Road <br />
+      Coimbatore <br />
+      Tamilnadu <br />
+    </address>
+
+    <p>blockquote tag is used to quote other text</p>
+    <blockquote>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, quos!
+      Perspiciatis, omnis? Quo nemo quia inventore ducimus facilis, aut quae.
+    </blockquote>
+
+    <p>This is my first <cite>Website</cite></p>
+
+    <p>
+      This is tutorialpoint; here learning is easy
+      <del>and difficult</del>, so their caption is easy to learn.
+    </p>
+
+    <p>
+      <dfn>
+        <abbr title="Hypertext Markup Language">HTML</abbr>
+      </dfn>
+      is the standard markup language for creating web pages.
+    </p>
+
+    <p>This is <em>Emphasized</em> text</p>
+
+    <p>This is <ins>Inserted</ins> text</p>
+
+    <p>This is <kbd>Keyboard</kbd> text</p>
+
+    <p>This is <mark>Marked</mark> text</p>
+
+    <p>This is <q>Quoted</q> text</p>
+
+    <p>
+      The <samp>samp</samp> tag defines sample output from a computer program.
+    </p>
+
+    <p>This is <small>Small</small> text</p>
+
+    <p>This is <strong>Strong</strong> text</p>
+
+    <p><sub>Subscript</sub> text</p>
+    <p><sup>Superscript</sup> text</p>
+    <p><time>Time</time> text</p>
+    <p><var>Variable</var> text</p>
+    <p><s>Strikethrough</s> text</p>
+    <p><u>Underline</u> text</p>
+    <p><mark>Highlight</mark> text</p>
+    <p>
+      <ruby>Ruby Base <rt>Ruby text</rt></ruby> text
+    </p>
+    <p><bdi>Bidirectional Isolate</bdi> text</p>
+    <p><bdo dir="rtl">Bidirectional Text</bdo> text</p>
+    <p><span lang="en">English</span> text</p>
+    <label for="disk_c">Disk usage C:</label>
+    <meter id="disk_c" value="5" min="0" max="10">2 out of 10</meter>
+    <br />
+    <label for="disk_d">Disk usage D:</label>
+    <meter id="disk_d" value="0.8">100%</meter>
+    <br />
+    <hr />
+    <br />
+
+    <!-- Html Form and Input Tags -->
+     <h3>Html Form and Input Tags</h3><br>
+
+    <form action="">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" autocomplete="off" /><br />
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" autocomplete="off" /><br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        autocomplete="off"
+      /><br />
+      <textarea name="" id="" autofocus cols="30" rows="5" wrap="hard">
+        Enter your text here...
+      </textarea>
+      <input type="submit" />
+    </form>
+    <br />
+    <input type="button" />
+    <input type="color" />
+    <input type="date" />
+    <input type="datetime-local" />
+    <input type="email" />
+    <input type="file" /><input type="hidden" />
+    <input type="image" alt="not setted any image" />
+    <input type="month" />
+    <input type="tel" />
+    <input type="time" />
+    <input type="url" />
+    <input type="week" />
+    <input type="search" />
+    <input type="reset" />
+    <input type="range" />
+    <label>Language:</label>
+    <br />
+    HTML <input type="checkbox" /> CSS <input type="checkbox" /> JavaScript
+    <input type="checkbox" /> ReactJS <input type="checkbox" />
+    <br />
+    <label>Rating:</label>
+    <br />
+    Expert <input type="radio" name="rating" value="expert" /> Intermediate
+    <input type="radio" name="rating" value="intermediate" /> Beginner
+    <input type="radio" name="rating" value="beginner" />
+    <br />
+    <select>
+      <option value="">Choose your option</option>
+      <optgroup label="Group 1">
+        <option value="opt1.1">Option 1.1</option>
+        <option value="opt1.2">Option 1.2</option>
+      </optgroup>
+      <optgroup label="Group 2">
+        <option value="opt2.1" selected>Option 2.1</option>
+        <option value="opt2.2">Option 2.2</option>
+      </optgroup>
+      <optgroup label="Group 3" disabled>
+        <option value="opt3.1">Option 3.1</option>
+        <option value="opt3.2">Option 3.2</option>
+      </optgroup>
+    </select>
+    <br /><br />
+
+    <form>
+      <fieldset>
+        <legend>This is a form</legend>
+        <label>First Name</label>
+        <input type="text" name="FirstName" />
+        <br /><br />
+        <label>Last Name</label>
+        <input type="text" name="LastName" />
+      </fieldset>
+      <br />
+      <fieldset>
+        <label>Email id</label>
+        <input type="email" name="email" />
+        <br /><br />
+        <label>Enter your password</label>
+        <input type="password" name="password" />
+        <br /><br />
+        <label>Confirm your password</label>
+        <input type="password" name="confirmPass" />
+      </fieldset>
+      <br />
+      <fieldset>
+        <label>Address</label>
+        <br />
+        <textarea name="address"></textarea>
+      </fieldset>
+      <br />
+      <button>Submit</button>
+    </form>
+    <br />
+    <form>
+      <h3>Datalist</h3>
+      <br />
+      <input list="values" />
+      <datalist id="values">
+        <option value="HTML"></option>
+        <option value="CSS"></option>
+        <option value="JavaScript"></option>
+        <option value="ReactJS"></option>
+      </datalist>
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <!-- HTML Image Tags -->
+     <h3>HTML Image Tags</h3><br>
+     <p>
+      Mahendra Singh Dhoni 
+      <img src=
+"https://upload.wikimedia.org/wikipedia/commons/7/70/Mahendra_Singh_Dhoni_January_2016_%28cropped%29.jpg"
+           width="42" height="42" style="vertical-align:top">
+      is an former Indian cricketer. He was captain of 
+      the Indian national team in limited-overs formats 
+      from 2007 to 2017 and in Test cricket from 2008 to 2014. 
+  </p>
+
+  <p>Click on the image to direct to webpage.</p> 
+  <a href="https://www.tutorialspoint.com/index.htm">
+      <img src="https://www.tutorialspoint.com/images/logo.png?v2" 
+           height="55" width="200"> 
+  </a> 
+  <br>
+  <h2>HTML map Tag with Area Tag(circle)</h2>
+<img src="https://www.tutorialspoint.com/cg/images/logo.png" alt="logo" usemap="#logo">
+<map name="logo">
+  <area shape="circle" coords="150,75,50" href="https://www.tutorialspoint.com/html/html_map_tag.htm">
+</map>
 <br>
-
-
-
+<h3><Picture>tag</Picture></h3>
+<picture>
+  <source media="(min-width: 600px)" srcset="/artificial_intelligence/images/artificial-intelligence-mini-logo.jpg">
+  <source media="(min-width: 450px)" srcset="/cg/images/logo.png">
+  <img src="/html/images/html-mini-logo.jpg" alt="LOGO" style="width:auto;">
+</picture>
+<br>
+<h3>Figure and Figcaption</h3>
+<figure>
+  <img src="/html/images/test_image.jpg" alt="Trulli" style="width:40%" height="30%">
+  <figcaption>Evening Dawn</figcaption>
+</figure>   
+<br>
+<h3>svg tag</h3>
+<svg width="250" height="150">
+  <rect width="200" height="100" style="fill:#DE3163;
+     stroke-width:8;stroke:#D5F5E3" />
+</svg>
 
     <script>
       var c = document.getElementById("myCanvas");
@@ -312,5 +618,3 @@
     </script>
   </body>
 </html>
-
-
