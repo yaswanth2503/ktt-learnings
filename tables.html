@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Different Table Attributes</title>
-    <!-- <style>
+    <style>
         table {
             width: 60%;
             border-collapse: collapse;
@@ -24,11 +24,11 @@
             padding: 10px;
             border: 2px solid black;
             font-size: 18px;
-            background-color: blue;
+            background-color: black;
             color: white;
         }
     
-    </style> -->
+    </style>
 </head>
 <body>
 
@@ -87,9 +87,9 @@
             <th colspan="3">Student Information</th>
         </tr>
         <tr>
-            <td>Name</td>
-            <td>Age</td>
-            <td>Grade</td>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
         </tr>
         <tr>
             <td>Vjay</td>
@@ -191,16 +191,21 @@
         Click here and type something...
     </div>
 </div>
-<!-- <script>
+<script>
     document.getElementById("editableBox").addEventListener("input", function () {
         try {
-            let cssText = this.innerText.trim(); // Get edited text
-            this.style.cssText = cssText; // Apply as inline style
+            let cssText = this.innerText.trim(); 
+            this.style.cssText = cssText; 
         } catch (e) {
             console.error("Invalid CSS", e);
         }
     });
-</script> -->
+</script>
+
+
+
+
+
 
 </body>
 </html>
