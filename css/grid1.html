@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Exercise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container{
+        border: 3px solid black;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(5,1fr);
+        gap: 10px;
+        width: 500px;
+       
+    }
+    
+    .grid-items{
+        width: 4vw;
+        height: 4vh;
+        background-color: red;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .box1{
+        grid-row:1;
+        grid-column: 3;
+    }
+
+    .box2{
+        grid-row:2;
+        grid-column: 3;
+    }
+    .box3{
+        grid-row:3;
+        grid-column: 1;
+    }
+    .box4{
+        grid-row:3;
+        grid-column: 2;
+    }
+    .box5{
+        grid-row:3;
+        grid-column: 3;
+    }
+
+    .box6{
+        grid-row:3;
+        grid-column: 4;
+   }
+
+    .box7{
+        grid-row:3;
+        grid-column: 5;
+    }
+
+    .box8{
+        grid-row:4;
+        grid-column: 3;
+    }
+
+    .box9{
+        grid-row:5;
+        grid-column: 3;
+    }
+
+    
+</style> -->
+
+
+ <!-- <style>
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+.container{
+    border: 2px solid;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    gap: 10px;
+}
+
+.grid-items{
+   
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border: 1px solid black;
+}
+  
+  .box1{
+    background-color: #f6e2c2;
+
+  }
+
+  .box2{
+    background-color: #bd7941;
+   
+
+  }
+
+  .box3{
+    background-color: #f6e2c2;
+  }
+
+  .box4{
+    background-color: #bd7941;
+  }
+
+  .box5{
+    background-color: #f6e2c2;
+  }
+
+  .box6{
+    background-color: #bd7941;
+  }
+
+  .box7{
+    background-color: #f6e2c2;
+  }
+
+  .box8{
+    background-color: #bd7941;
+  }
+</style>  -->
+
+
+<style>
+  .container{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 1px;
+  }
+
+  .grid-items{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+   
+    
+    
+   
+  }
+
+  .box1{
+    grid-column:1/span 3 ;
+    grid-row:1/span 3 ;
+
+
+  }
+
+  .box4{
+    grid-column:4/span 4 ;
+  }
+
+  .box6{
+     grid-row: 4/span 5;
+  }
+
+ 
+
+  
+</style> 
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="grid-items box1">1</div>
+        <div class="grid-items box2">2</div>
+        <div class="grid-items box3">3</div>
+        <div class="grid-items box4">4</div>
+        <div class="grid-items box5">5</div>
+        <div class="grid-items box6">6</div>
+        <div class="grid-items box7">7</div>
+        <div class="grid-items box8">8</div>
+        <div class="grid-items box9">9</div>
+    </div> -->
+
+   <!-- <div class="container"> 
+            <div class="grid-items box1"><i class="fa-solid fa-chess-rook"></i></div>
+            <div class="grid-items box2"><i class="fa-solid fa-chess-knight"></i></div>
+            <div class="grid-items box3"><i class="fa-solid fa-chess-bishop"></i></div>
+            <div class="grid-items box4"><i class="fa-solid fa-chess-queen"></i></div>
+            <div class="grid-items box5"><i class="fa-solid fa-chess-king"></i></div>
+            <div class="grid-items box6"><i class="fa-solid fa-chess-bishop"></i></div>
+            <div class="grid-items box7"><i class="fa-solid fa-chess-knight"></i></div>
+            <div class="grid-items box8"><i class="fa-solid fa-chess-rook"></i></div>
+            <div class="grid-items box9"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="grid-items box10"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="grid-items box11"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="grid-items box12"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="grid-items box13"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="grid-items box14"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="grid-items box15"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="grid-items box16"><i class="fa-solid fa-chess-pawn"></i></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+
+    </div> -->
+
+   
+    <div class="container">
+        <div class="grid-items box1">1</div>
+        <div class="grid-items box2">2</div>
+        <div class="grid-items box3">3</div>
+        <div class="grid-items box4">4</div>
+        <div class="grid-items box5">5</div>
+        <div class="grid-items box6">6</div>
+        <div class="grid-items box7">7</div>
+
+    </div>
+
+
+</body> 
+</html> 
+

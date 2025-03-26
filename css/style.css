@@ -26,7 +26,7 @@ h1{
 /* Descandant Selector */
 
 div p{
-    color:black
+    color:black;
 }
 
 /* Child Selector */
@@ -107,5 +107,54 @@ section p:not(.my-para){
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Before */
+
+section h3::before{
+    content: "😎";
+}
+
+/* After */ 
+
+section h3::after{
+    content: "😎";
+}
+
+/* First Letter */
+
+section h4::first-letter{
+    color: red;
+}
+
+/* First Line */
+
+section h4::first-line{
+    color: red;
+}
 
 
+/* Float */
+
+#img1{
+    float: left;
+}
+
+#img2{
+    /* float: right; */
+    position: absolute;
+    top:283%;
+    left:80%;
+    height: 27vh;
+    
+    /* when the image is in float, if it not inside the container, we set the display to flow-root , then it will flow inside the container */
+}
+
+section{
+    border: 1px solid black;
+}
+
+
+
+
+#img3{
+    transform: rotate(360deg);
+}
